@@ -1,0 +1,76 @@
+@import "variables"
+.industry_review
+    background: #f7f6f6 url($imgPath + 'reviews-bg.png') no-repeat 50% 100%
+    background-size: cover
+.industry_review_wrap
+    display: flex
+    flex-direction: row
+    align-items: center
+    .industry_text_wrap
+        width: 50%
+        h2
+            font-family: $segoe-ui-bold-font
+            text-transform: uppercase
+            font-size: 38px
+            margin-bottom: 45px
+            font-weight: 600
+            color: $text-color
+        .text-wrap
+            padding-right: 40px
+            p
+                font-size: 16px
+                margin-bottom: 35px
+                color: $text-color
+                max-width: 558px
+
+    .industry_img_wrap
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        .img_wrapper
+            width: 488px
+            height: 488px
+            border-radius: 50%
+            background: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                max-height: 250px
+                width: auto
+.industry-work-wrap
+    display: flex
+    flex-direction: row
+    align-items: center
+    .industry-work-img
+        width: 50%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        .img-wrap
+            img
+                max-height: 540px
+                width: auto
+    .industry-work-thesis
+        width: 50%
+        display: flex
+        padding-left: 130px
+        ul
+            padding-right: 10px
+            li
+                margin-bottom: 25px
+                position: relative
+                padding-left: 15px
+                font-size: 16px
+                color: $text-color
+                &:before
+                    content: ''
+                    position: absolute
+                    top: 8px
+                    left: -20px
+                    display: inline-block
+                    width: 10px
+                    height: 10px
+                    background-color: $accent-color
+                    border-radius: 50%

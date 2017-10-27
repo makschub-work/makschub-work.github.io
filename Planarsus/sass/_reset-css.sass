@@ -1,0 +1,142 @@
+@import "variables"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  outline: 0
+
+body
+  font-size: $browser-context
+  line-height: 1.5
+  min-width: 320px
+  overflow-x: hidden
+  position: relative
+  height: 100%
+  font-family: $segoe-ui-font
+
+fieldset,
+input,
+img
+  border: 0
+
+textarea
+  overflow: auto
+  resize: none
+
+li
+  list-style-type: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+button, a
+  cursor: pointer
+  display: inline-block
+
+a
+  text-decoration: none
+  color: $accent-color
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button
+  -webkit-appearance: none
+
+input[type=number]
+  -moz-appearance: textfield
+
+input
+  -webkit-appearance: none
+  font-size: 13px
+  text-transform: uppercase
+  font-weight: bold
+  color: $placeholder-color
+  background-color: transparent
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder
+  text-overflow: ellipsis
+
+input:invalid
+  box-shadow: none
+
+input:-moz-submit-invalid
+  box-shadow: none
+
+input:-moz-ui-invalid
+  box-shadow: none
+
+input::-ms-clear
+  display: none
+
+img
+  width: 100%
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b
+  font-weight: normal
+  padding: 0
+  margin: 0
+
+button, form, fieldset
+  border: none
+/* Disable Auto Zoom in Input “Text” tag - Safari on iPhone */
+input
+  &[type="color"],
+  &[type="date"],
+  &[type="datetime"],
+  &[type="datetime-local"],
+  &[type="email"],
+  &[type="month"],
+  &[type="number"],
+  &[type="password"],
+  &[type="search"],
+  &[type="tel"],
+  &[type="text"],
+  &[type="time"],
+  &[type="url"],
+  &[type="week"]
+    font-size: 16px
+
+*::-webkit-input-placeholder
+  color: $placeholder-color
+  opacity: 1
+  font-size: 13px
+  font-family: $segoe-ui-font
+  font-weight: bold
+  text-transform: uppercase
+
+*:-moz-placeholder
+  color: $placeholder-color
+  opacity: 1
+  font-size: 13px
+  font-family: $segoe-ui-font
+  font-weight: bold
+  text-transform: uppercase
+
+*::-moz-placeholder
+  color: $placeholder-color
+  opacity: 1
+  font-size: 13px
+  font-family: $segoe-ui-font
+  font-weight: bold
+  text-transform: uppercase
+
+*:-ms-input-placeholder
+  color: $placeholder-color
+  opacity: 1
+  font-size: 13px
+  font-family: $segoe-ui-font
+  font-weight: bold
+  text-transform: uppercase

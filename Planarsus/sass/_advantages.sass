@@ -1,0 +1,66 @@
+@import "variables"
+.advantages-row
+  .advantages-desc,
+  .advantages-items-wr
+    display: inline-block
+    vertical-align: top
+  .advantages-desc
+    width: 41.5%
+    color: $text-color
+    background-color: $accent-color
+    font-size: 16px
+    line-height: 24px
+    padding: 60px 60px 45px 60px
+    strong
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: bold
+  .advantages-items-wr
+    width: 58%
+    padding-top: 35px
+  .advantages-item
+    width: 24%
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    color: $text-color
+    .advantages-item-title
+      font-size: 14px
+      text-transform: uppercase
+      padding-bottom: 22px
+      position: relative
+      font-weight: 500
+      display: table
+      width: 100%
+      margin-bottom: 28px
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 0)
+        width: 49px
+        height: 1px
+        background-color: #b7b7b7
+      span
+        display: table-cell
+        vertical-align: bottom
+    .advantages-item-img
+      width: 100%
+      max-width: 102px
+      height: 102px
+      border-radius: 50%
+      display: inline-block
+      box-shadow: 0 0 20px rgba(0,2,3,0.1)
+      position: relative
+      img
+        max-width: 63px
+        max-height: 63px
+        width: auto
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto

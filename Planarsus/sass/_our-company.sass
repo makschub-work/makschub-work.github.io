@@ -1,0 +1,48 @@
+@import "variables"
+.our-company
+  .header-content
+    h1
+      padding-bottom: 40px
+      position: relative
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 0)
+        width: 82px
+        height: 1px
+        background-color: $accent-color
+    p
+      max-width: 100%
+      padding-bottom: 78px
+    .btn
+      margin-bottom: 0
+.about-us-row,
+.more-about-row
+  display: table
+  width: 100%
+  .about-us-cell,
+  .more-about-cell
+    display: table-cell
+    vertical-align: middle
+    width: 49%
+  .about-us-img
+    img
+      max-width: 535px
+.our-team
+  background-color: #fafafa
+.our-team-row
+  .our-team-cell
+    margin-bottom: 50px
+    width: 32%
+    display: inline-block
+    vertical-align: top
+  .our-team-content
+    width: 100%
+    max-width: 350px
+    margin: 0 auto
+    text-align: center
+    .our-team-img
+      padding-bottom: 30px
