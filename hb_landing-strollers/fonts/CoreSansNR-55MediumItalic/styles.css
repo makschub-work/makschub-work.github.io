@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'CoreSansNR-55MediumItalic';
+  src: url('CoreSansNR-55MediumItalic.eot?#iefix') format('embedded-opentype'),  url('CoreSansNR-55MediumItalic.otf')  format('opentype'),
+	     url('CoreSansNR-55MediumItalic.woff') format('woff'), url('CoreSansNR-55MediumItalic.ttf')  format('truetype'), url('CoreSansNR-55MediumItalic.svg#CoreSansNR-55MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
