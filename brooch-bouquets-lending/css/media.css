@@ -1,0 +1,354 @@
+@media (max-width: 1400px) {
+  .content-what-product {
+    background: url("../images/bg_content_example-brooch-bouquett.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .content-comparison::after,
+  .content-comparison::before,
+  .shadow-bottom::after,
+  .example-brooch-bouquet::before,
+  .content-comparison::before, .say-bride::before,
+  .content-comparison::after, .say-bride::after {
+    display: none;
+  }
+
+  .content-what-product::before, .brooch-bouquet_descriptions::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: auto;
+    min-height: auto;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .content-header h1 {
+    font-size: 72px;
+  }
+
+  .btn-more {
+    margin-bottom: 50px;
+  }
+
+  .scroll_bottom {
+    margin-bottom: 30px;
+  }
+
+  .product-comparison,
+  .photo_bouquet{
+    max-width: 240px;
+    height: auto;
+    left: 25px;
+  }
+
+  .product-comparison.right-style {
+    right: 25px;
+  }
+
+  .product-comparison span {
+    max-width: 240px;
+    font-size: 16px;
+  }
+
+  .brooch-bouquet_descriptions ul li .image-style {
+    max-width: 190px;
+    max-height: 190px;
+  }
+
+  .brooch-bouquet_descriptions ul li .image-style::before {
+    max-width: 166px;
+    left: 0;
+  }
+
+  .what-do-professionals h3 {
+    min-width: auto;
+  }
+
+  .professional-review {
+    max-width: 500px;
+  }
+
+  .footer h2 {
+    transform: none;
+    height: auto;
+  }
+
+  .footer::before {
+    transform: none;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .content-header h1>br {
+    display: none;
+  }
+
+  .content-header h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .content-header span {
+    font-size: 27px;
+  }
+
+  .product-comparison img {
+    max-width: 150px;
+  }
+
+  .content-comparison ul {
+    margin-top: 300px;
+    max-width: 70%;
+  }
+
+  .product-comparison span {
+    max-width: 240px;
+    font-size: 14px;
+  }
+
+  .example-brooch-bouquet ul li {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .example-brooch-bouquet ul li a::before {
+    height: auto;
+  }
+
+  .content-comparison ul {
+    margin-bottom: 38px;
+  }
+
+  .brooch-bouquet_descriptions ul li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .professional-review h4 {
+    font-size: 20px;
+  }
+  .professional-review span {
+    font-size: 16px;
+  }
+
+  .reviews-professional .photo {
+    max-width: 170px;
+    margin-left: 0;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+
+  .professional-review p {
+    font-size: 14px;
+  }
+
+  .reviews-professional .professional-review-two::after,
+  .professional-review::before {
+    display: none;
+  }
+
+  .professional-review {
+    margin-left: 45px;
+  }
+  
+  .mobile-left {
+    float: left;
+  }
+
+  .say-bride img {
+    width: 100%;
+  }
+
+  .footer::before {
+    transform: none;
+  }
+
+  .footer h2 {
+    font-size: 30px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .logo, a.btn-more {
+    display: none;
+  }
+
+  .logo-footer {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .content-header h1 {
+    font-size: 50px;
+    margin: 40px 0;
+  }
+
+  .btn-more {
+    max-width: 250px;
+  }
+
+  .scroll_bottom {
+    display: none;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .content-what-product p {
+    font-size: 15px;
+  }
+
+  .product-comparison span {
+    max-width: 200px;
+  }
+
+  .content-comparison h3 {
+    width: 100%;
+    min-width: auto;
+  }
+  .choose_brooch-bouquet {
+    max-width: 350px;
+    font-size: 20px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+  }
+
+  .choose_brooch-bouquet::before,
+  .choose_brooch-bouquet::after {
+    display: none;
+  }
+
+  .reviews-professional .photo {
+    display: none;
+  }
+
+  .professional-review {
+    margin-left: 0;
+    max-width: inherit;
+  }
+
+  .reviews-professional:last-child {
+    margin-bottom: 50px;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .logo-footer {
+    margin-bottom: 60px;
+  }
+
+  .footer h5 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+
+  .footer h5 br,
+  .footer p br {
+    display: none;
+  }
+
+}
+
+@media (max-width: 520px) {
+  h3 {
+    font-size: 21px;
+  }
+  .product-comparison span {
+    max-width: 200px;
+  }
+
+  .product-comparison,
+  .photo_bouquet {
+    max-width: 130px;
+  }
+
+  .product-comparison img {
+    max-width: 120px;
+    border: 10px solid #ffffff;
+  }
+
+  .content-comparison ul {
+    margin-top: 250px;
+    max-width: 80%;
+  }
+
+  .content-comparison ul li span {
+    font-size: 14px;
+  }
+
+  .content-comparison ul li span::after,
+  .content-comparison ul li span::before,
+  .content-comparison ul li span.check-mark-style::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .example-brooch-bouquet ul li {
+    max-width: 125px;
+    margin: 5px;
+  }
+
+
+  .content-comparison h3 {
+    margin-bottom: 35px;
+  }
+
+  .product-comparison {
+    top: 170px;
+  }
+
+  .choose_brooch-bouquet {
+    max-width: 280px;
+    font-size: 16px;
+  }
+
+  .brooch-bouquet_descriptions ul li .image-style {
+    max-width: 120px;
+    max-height: 120px;
+    border: 8px solid #ffffff;
+  }
+
+  .brooch-bouquet_descriptions ul li .image-style::before {
+    max-width: 104px;
+  }
+
+  .title {
+    min-height: 70px;
+  }
+
+  .title h5 {
+    font-size: 15px;
+  }
+
+  .brooch-bouquet_descriptions ul {
+    margin-bottom: 0;
+  }
+
+  .footer .choose_brooch-bouquet {
+    margin-bottom: 50px;
+  }
+}

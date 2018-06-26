@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no"/>
+	<!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi, width=device-width, user-scalable=no" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Sunrise</title>
+	<link rel="stylesheet" href="css/all.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!--[if lte IE 8]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+	<header class="header">
+		<div class="top-header clearfix">
+			<strong class="logo">
+				<b>sunrise</b>
+				<span>mining solutions</span>
+			</strong>
+			<div class="menu_header">
+				<ul>
+					<li><a href="#">о нас</a></li>
+					<li><a href="#">ферма</a></li>
+					<li><a href="#">отель</a></li>
+					<li class="active"><a href="#">контакты</a></li>
+					<li><a class="popup-with-zoom-anim" href="#small-dialog">вход / регистрация</a></li>
+				</ul>
+			</div>
+			<div class="overlay">
+				<nav class="overlayMenu">
+					<ul role="menu-mobile">
+						<li class="active"><a href="#">о нас</a></li>
+						<li><a href="#">ферма</a></li>
+						<li><a href="#">отель</a></li>
+						<li><a href="#">контакты</a></li>
+						<li><a class="popup-with-zoom-anim" href="#small-dialog">вход / регистрация</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="navBurger" role="navigation" id="navToggle"></div>
+		</div>
+		<div class="main-header-contact">
+			<div class="center">
+				<h1>мы находимся здесь</h1>
+				<p>193230 г. Санкт - Петербург, ул. Октябрьская набережн., дом 4 корп.1, стр. 1/2</p>
+			</div>
+			<div id="map" class="map"></div>
+			<!--<div class="map">-->
+				<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38059.81592699871!2d30.392800823702864!3d59.911021891552686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631d864a3ae41%3A0xba11b6413f5d989!2z0J7QutGC0Y_QsdGA0YzRgdC60LDRjyDQvdCw0LEuLCA0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTMwOTE!5e0!3m2!1sru!2sua!4v1524040719961" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+			<!--</div>-->
+		</div>
+	</header>
+	<section class="content_contact">
+		<div class="center">
+			<h2>свяжитесь с нами</h2>
+			<div class="contacts">
+				<div class="main_contact">
+					<form class="form-contact">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш Email">
+						<div class="resize">
+							<div class="handle-hide"></div>
+							<textarea name="text" class="resize" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+						</div>
+						<input type="submit" value="ОТПРАВИТЬ">
+					</form>
+				</div>
+				<div class="main_contact">
+					<p>Вы можете связаться с нами  удобным способом.</br>
+						Мы работаем с  9.00 до 19.00 по пн - сб, вс - выходной.
+					</p>
+					<p class="adress">193232  ул. Октябрьская набережн, г. СПб,
+						д. 1, корп. 1, стр. 4,</p>
+					<p class="contact-tel-email">T:<a class="contact-tel-email" href="telto:(812) 456-1111"> (812) 456-1111</a></p>
+					<p class="contact-tel-email">E:<a class="contact-tel-email" href="mailto:fghgfhg@mail.com"> fghgfhg@mail.com</a></p>
+					<ul class="soc">
+						<li><a href="#">f</a></li>
+						<li><a href="#">vk</a></li>
+						<li><a href="#">g</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<p>&#9400;2018 г. Санкт - Птетербург. Все права защищены.</p>
+		<a href="#" id="toTop" class="scroll-top_btn"></a>
+	</footer>
+</div>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide popup-one">
+		<h1>войти</h1>
+		<form class="form_popup_come">
+			<input type="email" placeholder="Email адрес">
+			<input type="password" placeholder="Пароль">
+		</form>
+		<a class="forgot" href="#">Забыли пароль?</a>
+		<button class="btn_to-come">ВХОД</button>
+		<div class="registration">
+			<span>У вас нет учетной записи?</span>
+			<a href="#small-dialog-2" class="regist_btn popup-with-zoom-anim">регистрация</a>
+		</div>
+	</div>
+
+
+	<div id="small-dialog-2" class="zoom-anim-dialog mfp-hide popup-two">
+		<div class="main-popup left-bg">
+			<h2>Добро пожаловать!</h2>
+			<p>Чтобы иметь возможность пользоваться  более расширенным функционалом, необходимо зарегистрироваться.</p>
+		</div>
+		<div class="main-popup">
+			<h1>регистрация</h1>
+			<form class="form_popup_come">
+				<input type="text" placeholder="Имя">
+				<input type="email" placeholder="Email адрес">
+				<input type="password" placeholder="Пароль">
+				<input type="password" placeholder="Пароль ( повторить )">
+				<label class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox__text">Я согласен с условиями</span>
+				</label>
+				<button class="btn_to-come">регистрация</button>
+			</form>
+			<div class="registration">
+				<span>У вас уже есть учетная запись?</span>
+				<a href="#small-dialog" class="regist_btn popup-with-zoom-anim">Войти</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
