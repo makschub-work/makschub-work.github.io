@@ -1,0 +1,442 @@
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/BebasNeueRegular/BebasNeueRegular.otf')  format('opentype'),
+	url('../fonts/BebasNeueRegular/BebasNeueRegular.woff') format('woff'),
+	url('../fonts/BebasNeueRegular/BebasNeueRegular.ttf')  format('truetype'),
+	url('../fonts/BebasNeueRegular/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe-Regular';
+	src: url('../fonts/Circe-Regular/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Regular/Circe-Regular.otf')  format('opentype'),
+	url('../fonts/Circe-Regular/Circe-Regular.woff') format('woff'),
+	url('../fonts/Circe-Regular/Circe-Regular.ttf')  format('truetype'),
+	url('../fonts/Circe-Regular/Circe-Regular.svg#Circe-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe-Light';
+	src: url('../fonts/Circe-Light/Circe-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Light/Circe-Light.otf')  format('opentype'),
+	url('../fonts/Circe-Light/Circe-Light.woff') format('woff'),
+	url('../fonts/Circe-Light/Circe-Light.ttf')  format('truetype'),
+	url('../fonts/Circe-Light/Circe-Light.svg#Circe-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html {
+	-webkit-text-size-adjust: none;
+	height:100%;
+}
+body {
+	margin:0;
+	color:#49443c;
+	font:14px/21px Arial, Helvetica, sans-serif;
+	background:#fff;
+	min-width:320px;
+	height:100%;
+}
+img {
+	border-style:none;
+	vertical-align:top;
+}
+a {
+	color:#49443c;
+	outline:none;
+}
+a:hover {
+	text-decoration:none;
+}
+* {
+	outline:none ;
+}
+input:not([type="radio"], [type="checkbox"]), textarea, select {
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	-webkit-appearance:none;
+}
+form, fieldset {
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+menu,
+dialog {
+	display: block;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+p{
+	margin: 0 0 20px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 20px;
+	font-weight: normal;
+}
+#wrapper{
+	overflow: hidden;
+}
+.center{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.center:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+
+
+.logo{
+	display: inline-block;
+	vertical-align: top;
+	background:url(../images/besedki.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width:135px;
+	height:60px;
+	overflow:hidden;
+}
+
+.header {
+	position: relative;
+}
+
+.header::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100px;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.5);
+	border-bottom: 5px solid #000000;
+	z-index: 9;
+}
+
+.top-header {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	height: auto;
+	content: '';
+	z-index: 99999999;
+}
+
+.menu {
+	float: right;
+	text-align: right;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.menu ul {
+	width: 500px;
+	margin-bottom: 0;
+}
+
+.menu ul li {
+	display: inline-block;
+	line-height: normal;
+	margin-left: 25px;
+}
+
+.menu ul li a {
+	font-size: 28px;
+	font-family: 'BebasNeueRegular', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1px;
+	border-bottom: 2px solid transparent;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.menu ul li a:hover:before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.menu ul li a:before {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #FFFFFF;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transition: -webkit-transform 0.1s;
+	transition: -webkit-transform 0.1s;
+	transition: transform 0.1s;
+	transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.item {
+	position: relative;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	z-index: 999999;
+}
+
+.item::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.item .description {
+	max-width: 700px;
+	width: 100%;
+}
+
+.description {
+	left: -300px;
+	opacity: 0;
+	transition: all 1.8s ease;
+	position: relative;
+}
+
+.description h3 {
+	font-family: 'BebasNeueRegular', sans-serif;
+	font-size: 70px;
+	color: #ffffff;
+	position: relative;
+
+}
+
+.description p {
+	font-family: 'Circe-Regular', sans-serif;
+	font-size: 26px;
+	line-height: 1.3;
+	color: #ffffff;
+	position: relative;
+}
+
+.owl-item.active .description {
+	left: 0;
+	opacity: 1;
+}
+
+.owl-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.owl-dot {
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	margin: 0 5px;
+	border: 1px solid #000000;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+	background-color: rgba(0,0,0, 0.4);
+	border: 1px solid #ffffff;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+}
+
+.besedchani {
+	display: block;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.card {
+	height: 550px;
+	position: relative;
+	perspective: 1000px;
+	margin-bottom: 30px;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.8s;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	border: 1px solid #000000;
+}
+
+.back {
+	position: absolute;
+	text-align: center;
+	background-color: #ffffff;
+	transform: rotateY(180deg);
+	padding: 20px;
+	box-sizing: border-box;
+}
+.card:hover .front {
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+.card:hover .back {
+	transform: rotateY(360deg);
+	cursor: pointer;
+}
+
+
+.title {
+	font-size: 66px;
+	font-family: 'BebasNeueRegular', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.photo {
+	position: relative;
+	width: 100%;
+	height: 548px;
+}
+
+.photo::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.photo.andre::before {
+	background: url("../images/andre.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.max::before {
+	background: url("../images/max.png") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.serega::before {
+	background: url("../images/serega.jpg") -210px 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.vlad::before {
+	background: url("../images/vlad.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.alena::before {
+	background: url("../images/alena.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.dasha::before {
+	background: url("../images/dasha.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.photo.katya::before {
+	background: url("../images/katya.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.title-2 {
+	font-size: 55px;
+	text-transform:  uppercase;
+	font-family: 'BebasNeueRegular', sans-serif;
+	color: #000000;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.name {
+	display: block;
+	font-size: 32px;
+	font-family: 'BebasNeueRegular', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+.klichka {
+	font-size: 22px;
+	font-family: 'Circe-Regular', sans-serif;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+.description-bes {
+	font-size: 18px;
+	font-family: 'Circe-Light', sans-serif;
+	color: #000000;
+	line-height: 1.3;
+}
+
+audio {
+	width: 259px;
+	display: block;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+}
+
+.music {
+	text-transform: uppercase;
+	font-family: 'Circe-Bold', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+}
